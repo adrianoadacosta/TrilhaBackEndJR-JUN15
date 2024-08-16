@@ -5,7 +5,7 @@ const app = express();
 const dotenv = require('dotenv');
 const sequelize = require('./database');
 const userRoutes = require('./routes/userRoutes');
-//const taskRoutes = require('./routes/taskRoutes');
+const taskRoutes = require('./routes/taskRoutes');
 const protectedRoutes = require('./routes/protectedRoutes');
 
 dotenv.config();
@@ -16,7 +16,7 @@ app.use(express.json());
 
 // Rotas
 app.use('/api/users', userRoutes);
-//app.use('/api/tasks', taskRoutes);
+app.use('/api/tasks', taskRoutes);
 app.use('/api', protectedRoutes);
 
 const PORT = process.env.PORT || 3000;
