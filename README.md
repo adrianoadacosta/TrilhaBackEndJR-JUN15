@@ -7,6 +7,7 @@ Este é um projeto de uma API RESTful para gerenciamento de tarefas. A API permi
 - [Tecnologias](#tecnologias)
 - [Configuração do Projeto](#configuração-do-projeto)
 - [Execução do Projeto](#execução-do-projeto)
+- [Swagger UI](#Swagger_UI)
 - [Endpoints da API](#endpoints-da-api)
   - [Autenticação](#autenticação)
   - [Tarefas](#tarefas)
@@ -63,6 +64,10 @@ Para iniciar a aplicação, execute o comando:
 npm start
 ```
 O servidor será iniciado e estará disponível em http://localhost:3000.
+
+### Swagger UI
+A documentação da API está disponível através do Swagger UI. O Swagger UI fornece uma interface interativa para explorar os endpoints da API, testar requisições e visualizar as respostas.
+bra um navegador web e vá para a URL http://localhost:3000/api-docs. Esta URL exibirá a documentação interativa da API gerada pelo Swagger.
 
 ### Endpoints da API
 
