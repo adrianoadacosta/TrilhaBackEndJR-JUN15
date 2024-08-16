@@ -7,6 +7,7 @@ const sequelize = require('./database');
 const userRoutes = require('./routes/userRoutes');
 const taskRoutes = require('./routes/taskRoutes');
 const protectedRoutes = require('./routes/protectedRoutes');
+const { swaggerUi, swaggerSpec } = require('./swagger');
 
 dotenv.config();
 
@@ -14,7 +15,10 @@ console.log('JWT Secret:', process.env.JWT_SECRET);
 
 app.use(express.json());
 
-// Rotas
+// Rotas do Swagger
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
+// Rotas da API
 app.use('/api/users', userRoutes);
 app.use('/api/tasks', taskRoutes);
 app.use('/api', protectedRoutes);
