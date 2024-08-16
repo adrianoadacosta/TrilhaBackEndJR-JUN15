@@ -7,7 +7,7 @@ Este é um projeto de uma API RESTful para gerenciamento de tarefas. A API permi
 - [Tecnologias](#tecnologias)
 - [Configuração do Projeto](#configuração-do-projeto)
 - [Execução do Projeto](#execução-do-projeto)
-- [Swagger UI](#Swagger_UI)
+- [Swagger UI](#Swagger-UI)
 - [Endpoints da API](#endpoints-da-api)
   - [Autenticação](#autenticação)
   - [Tarefas](#tarefas)
